@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FormLLC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container-header">
+      <nav class="nav" aria-label="Primary">
+        <!-- LEFT GROUP -->
+        <div class="nav-left">
+          <a href="index.html" class="brand-link" aria-label="FormLLC">
+            <div class="brand" aria-hidden="true">
+              <span class="form">Form</span><span class="llc">LLC</span>
+            </div>
+          </a>
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <div class="dropdown">
+              <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Comparison</button>
+              <div class="dropdown-content">
+                <a href="formllcvsdoola.html">FormLLC vs Doola</a>
+                <a href="formllcvsbizee.html">FormLLC vs Bizee</a>
+                <a href="formllcvsatlas.html">FormLLC vs Atlas</a>
+                <a href="formllcvszenbusiness.html">FormLLC vs ZenBusiness</a>
+                <a href="formllcvsalternatives.html">FormLLC vs Alternatives</a>
+              </div>
+            </div>
+            <a href="aboutus.html">About us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- RIGHT GROUP -->
+        <div class="nav-right">
+          <div class="actions">
+            <a href="https://formllc.net/" class="btn ghost">Account</a>
+            <a href="start.html" class="btn primary">Consult Now</a>
+          </div>
+
+          <button class="burger" aria-label="Open menu" id="burger">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 6h16M3 11h16M3 16h16"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile sheet -->
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <div class="sheet">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px">
+        <div class="brand"><span class="form">Form</span><span class="llc">LLC</span></div>
+        <button class="burger" aria-label="Close menu" id="closeSheet">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4l14 14M18 4L4 18"/>
+          </svg>
+        </button>
+      </div>
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/pricing.html">Pricing</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="this.parentElement.classList.toggle('open')">Comparison</button>
+        <div class="dropdown-content">
+          <a href="formllcvsdoola.html">FormLLC vs Doola</a>
+          <a href="formllcvsbizee.html">FormLLC vs Bizee</a>
+          <a href="formllcvsatlas.html">FormLLC vs Atlas</a>
+          <a href="formllcvszenbusiness.html">FormLLC vs ZenBusiness</a>
+          <a href="formllcvsalternatives.html">FormLLC vs Alternatives</a>
+        </div>
+      </div>
+      <a href="/aboutus.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <div style="height:10px"></div>
+      <a href="https://formllc.net/" class="btn ghost" style="width:100%">Account</a>
+      <a href="start.html" class="btn primary" style="width:100%">Consult Now</a>
+    </div>
+  </div>
+
+  <main>
+  <div class="container">
+    <section class="hero">
+      <!-- LEFT: copy (centered stack) -->
+      <div class="hero-copy">
+        <div class="trust trust--light" aria-label="Trustpilot rating 4.7 out of 5">
+          <b>4.7</b>
+          <span>Out of 5</span>
+          <span class="star" aria-hidden="true"></span>
+          <b>TrustPilot</b>
+        </div>
+
+        <h1 class="headline">
+          Start your Business in<br>
+          the USA as a Non-
+          Resident with <br> Form<span style="color:#ff4d5a;">LLC</span>
+        </h1>
+
+        <p class="sub">Your business, fully set up — one payment, all services, zero surprises.</p>
+
+        <div class="controls">
+          <!-- Select: Entity -->
+          <div class="select select--light" data-select="entity">
+            <button type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Pick an Entity" id="entityBtn">
+              Pick an Entity
+            </button>
+            <svg class="caret" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+            <ul class="menu" role="listbox" id="entityMenu">
+              <li><button role="option" data-value="LLC">LLC</button></li>
+              <li><button role="option" data-value="C-Corp">C-Corp</button></li>
+              <li><button role="option" data-value="S-Corp">S-Corp</button></li>
+              <li><button role="option" data-value="Non-profit">Non-profit</button></li>
+            </ul>
+          </div>
+
+          <!-- Select: State -->
+          <div class="select select--light" data-select="state">
+            <button type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose State" id="stateBtn">
+              Choose State
+            </button>
+            <svg class="caret" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+            <ul class="menu" role="listbox" id="stateMenu">
+              <li><button role="option" data-value="Wyoming">Wyoming</button></li>
+              <li><button role="option" data-value="Delaware">Delaware</button></li>
+              <li><button role="option" data-value="New Mexico">New Mexico</button></li>
+              <li><button role="option" data-value="Florida">Florida</button></li>
+              <li><button role="option" data-value="Texas">Texas</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn primary" id="startBtn">Start My business</button>
+        </div>
+      </div>
+
+      <!-- RIGHT: image -->
+      <div class="hero-visual">
+        <img
+          class="hero-art"
+          src="Assets/Group%2044.png"
+          alt="LLC process cards and notifications"
+          loading="eager"
+          decoding="async" fetchpriority="high">
+      </div>
+    </section>
+    
+    <!-- PRESS / FEATURED BAR -->
+    <section class="press container">
+      <div class="press-card">
+        <div class="press-row">
+          <h3 class="press-label">Featured on Popular Platforms</h3>
+          <div class="press-logos">
+            <img src="Assets/image 5.png" alt="UK Post Now">
+            <img src="Assets/image 6.png" alt="Arizona Headlines">
+            <img src="Assets/image 2.png" alt="Finance European Post">
+            <img src="Assets/image 3.png" alt="Arab Insiders">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pitch / Support headline -->
+    <section class="pitch container">
+      <h2 class="pitch-title">
+        Your U.S. Business. Fully<span class="br-desktop"><br></span>Supported.
+      </h2>
+      <p class="pitch-sub">
+        Incorporation, compliance, and growth tools that work better together.
+      </p>
+    </section>
+
+    <!-- ===== Features (3-up) ===== -->
+    <section class="features container">
+      <div class="feature-grid">
+        <!-- Left card -->
+        <article class="feature-card feature-card--offsetL">
+          <header class="feature-head">
+            <span class="feature-icon feature-icon--rose" aria-hidden="true">
+              <!-- Shield Check (Compliance) -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Compliance icon">
+                <path d="M12 3l7 4v5c0 5-3.5 7.8-7 9-3.5-1.2-7-4-7-9V7l7-4z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <h3 class="feature-title">Easy Annual Filings &amp; Compliance</h3>
+          </header>
+          <p class="feature-copy">
+            Stay on top of requirements with streamlined annual filings and BOI updates —
+            get reminders, clear steps, and expert support year-round.
+          </p>
+        </article>
+
+        <!-- Middle card (as requested) -->
+        <article class="feature-card feature-formation feature-card--offsetM">
+          <header class="feature-head">
+            <span class="feature-icon feature-icon--sky" aria-hidden="true">
+              <!-- Rocket -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9l7-7"/><path d="M5 19l2.5-2.5"/><path d="M9 15l-4 4"/>
+                <path d="M15 9a6 6 0 1 1-6-6"/><path d="M9 9h.01"/>
+              </svg>
+            </span>
+            <h3 class="feature-title">Business Formation</h3>
+          </header>
+          <p class="feature-copy">
+            Form your LLC with ease — choose your package, appoint a registered agent,
+            secure your EIN, file your BOI, set up your online presence, and open a
+            business bank account to keep finances organized.
+          </p>
+
+          <!-- Image slot -->
+          <div id="formation-image-slot">
+            <img
+              class="feature-media-img"
+              src="Assets/Group51.png"
+              alt="Formation progress, card mock, and documents"
+              loading="eager"
+              decoding="async">
+          </div>
+        </article>
+
+        <!-- Right card -->
+        <article class="feature-card feature-card--offsetR">
+          <header class="feature-head">
+            <span class="feature-icon feature-icon--indigo" aria-hidden="true">
+              <!-- Grid/Dashboard -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Dashboard icon">
+                <rect x="3" y="3" width="7" height="7" rx="1" ry="1"/>
+                <rect x="14" y="3" width="7" height="4" rx="1" ry="1"/>
+                <rect x="14" y="9" width="7" height="12" rx="1" ry="1"/>
+                <rect x="3" y="12" width="7" height="9" rx="1" ry="1"/>
+              </svg>
+            </span>
+            <h3 class="feature-title">Smart Dashboard</h3>
+          </header>
+          <p class="feature-copy">
+            Track formation, BOI, EIN, RA details, deadlines, and banking setup — all in one place.
+          </p>
+          <div class="feature-actions">
+            <a href="#pricing" class="btn primary">Get Pricing</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </div>
+  </main>
+
+    <!-- ==== Why FormLLC ==== -->
+  <section class="why" id="why">
+    <div class="container">
+      <!-- Headline & sub -->
+      <div class="why-wrap">
+        <h2 class="why-title">Why FormLLC?</h2>
+        <p class="why-sub">
+          With FormLLC, starting your U.S. business is just the first step —
+          success is the destination.<span class="br-desktop"><br></span>
+          See why we’re ahead of the rest.
+        </p>
+      </div>
+
+      <!-- Split row -->
+      <div class="why-proof">
+        <div class="why-proof-grid">
+          <!-- LEFT copy -->
+          <div class="why-proof-left">
+            <header class="why-proof-header">
+              <div class="why-icon" aria-hidden="true">
+                <!-- Rocket (affordable & trusted launch) -->
+                <svg viewBox="0 0 24 24" role="img" aria-label="Rocket" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 4.5c2.1 0 3.9 1.8 3.9 3.9 0 3.5-3.7 6.8-5.9 8.1-2.2-1.3-5.9-4.6-5.9-8.1C6.1 6.3 7.9 4.5 10 4.5h4z"/>
+                  <circle cx="12" cy="8.4" r="1.6"/>
+                  <path d="M8 15l-2.5 2.5M16 15l2.5 2.5M12 17.5v3M11 20.5l-1.4-1M13 20.5l1.4-1"/>
+                </svg>
+              </div>
+              <h3 class="why-proof-title">Affordable and Trusted Platform</h3>
+            </header>
+
+            <p class="why-proof-copy">
+              Trusted by 5,000+ entrepreneurs and business owners, and backed by a
+              <strong>4.7 rating</strong> on <strong>Trustpilot</strong>, <strong>Google</strong>, and
+              <strong>Fiverr</strong>, FormLLC helps businesses register their companies with ease and ensures
+              full compliance with federal and state tax laws.
+            </p>
+          </div>
+
+          <!-- RIGHT: transparent PNG reviews image -->
+          <div class="why-proof-right">
+            <img
+              class="why-proof-img is-transparent"
+              src="Assets/Group 47.png"
+              alt="Customer reviews for FormLLC"
+              loading="eager"
+              decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <!-- ==== Personalized Support (NEW, placed right after Why proof) ==== -->
+      <section class="support support--inwhy" id="support">
+        <!-- already inside .container -->
+        <div class="support-grid">
+          <!-- LEFT: single transparent PNG -->
+          <div class="support-visual">
+            <img
+              class="support-art is-transparent"
+              src="Assets/Group 49.png"
+              alt="FormLLC support chat preview"
+              loading="lazy"
+              decoding="async">
+          </div>
+
+          <!-- RIGHT: copy -->
+          <div class="support-copy">
+            <div class="support-head">
+              <div class="why-icon" aria-hidden="true">
+                <!-- Headset (personalized support) -->
+                <svg viewBox="0 0 24 24" role="img" aria-label="Headset support" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 1 1 18 0v4a3 3 0 0 1-3 3h-2v-6h2V12a7 7 0 1 0-14 0v2h2v6H6a3 3 0 0 1-3-3v-4z"/>
+                  <circle cx="12" cy="10" r="1.6"/>
+                </svg>
+              </div>
+              <h3 class="support-title">Personalized Support for Each Customer</h3>
+            </div>
+            <p class="support-sub">
+              We provide personalized support for every customer, understanding that each
+              <strong>business has its own unique complexities</strong>. With our tailored approach and a dedicated
+              dashboard, we make it easier for entrepreneurs to manage their company formation, compliance, and growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Split row -->
+      <div class="why-proof">
+        <div class="why-proof-grid">
+          <!-- LEFT copy -->
+          <div class="why-proof-left">
+            <header class="why-proof-header">
+              <div class="why-icon" aria-hidden="true">
+                <!-- Growth bars + arrow (tailored growth) -->
+                <svg viewBox="0 0 24 24" role="img" aria-label="Growth chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19V5"/>
+                  <path d="M8 19v-6"/>
+                  <path d="M12 19v-9"/>
+                  <path d="M16 19v-12"/>
+                  <path d="M20 19v-4"/>
+                  <path d="M4 11l4-3 4 3 4-5 4 2"/>
+                </svg>
+              </div>
+              <h3 class="why-proof-title">Tailored Growth for Every Business.</h3>
+            </header>
+
+            <p class="why-proof-copy">
+              That’s not where <strong>FormLLC</strong> stops. Our expert team in
+              <strong>tech, marketing, and legal services</strong> goes beyond company registration to drive
+              <strong>business growth</strong> in both the <strong>U.S.</strong> and <strong>global markets</strong>.
+              From <strong>registration to revenue</strong>, our proven model has helped countless
+              entrepreneurs—whether <strong>solo founders</strong> or <strong>agencies</strong>—achieve measurable
+              <strong>returns on investment</strong>.
+            </p>
+          </div>
+
+          <!-- RIGHT: card + image -->
+          <div class="why-proof-right">
+            <div class="why-card">
+              <div class="why-card-label"></div>
+              <img src="Assets/Group50.png" alt="Dashboard preview" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- ==== Partners / We are the Best ==== -->
+        <section class="partners container" aria-labelledby="partners-title">
+          <h3 id="partners-title" class="partners-title">We are the Best</h3>
+          <p class="partners-sub">
+            See how we stack up against top competitors. Compare our pricing and services to clearly
+            understand why we’re the right choice for your business needs.
+          </p>
+
+          <div class="partners-logos">
+            <!-- Use transparent SVG/PNG logos -->
+            <img src="Assets/imgi_8_mercury1.jpg"   alt="Mercury"   class="partner-logo">
+            <img src="Assets/imgi_7_stripe.png"    alt="Stripe"    class="partner-logo">
+            <img src="Assets/imgi_6_payoneer.png"  alt="Payoneer"  class="partner-logo">
+            <img src="Assets/imgi_5_paypal.png"    alt="PayPal"    class="partner-logo">
+          </div>
+        </section>
+
+        <!-- Comparison block (extends the WHY section) -->
+        <div class="why-compare">
+          <div class="cmp-card">
+            <div class="cmp-scroller2" role="region" aria-label="Provider comparison" tabindex="0">
+              <table class="cmp2" aria-describedby="cmp2-caption">
+                <caption id="cmp2-caption" class="sr-only">
+                  Comparison of features included with FormLLC, Doola, and IndiaFilings
+                </caption>
+
+                <thead>
+                  <tr>
+                    <th scope="col" class="cmp-intro">
+                      <div class="cmp-intro-wrap">
+                        <div class="cmp-intro-title">Comparison</div>
+                        <div class="cmp-intro-sub">Choose your plan according to your organizational plan</div>
+                      </div>
+                    </th>
+
+                    <!-- Brand logos (transparent SVG/PNG) -->
+                    <th scope="col" class="cmp-brand">
+                      <img class="cmp-logo" src="Assets/imgi_11_Untitled-design-29-1-1536x567.png" alt="FormLLC">
+                      <span class="sr-only">FormLLC</span>
+                    </th>
+                    <th scope="col" class="cmp-brand">
+                      <img class="cmp-logo" src="Assets/imgi_11_doola.webp" alt="doola">
+                      <span class="sr-only">doola</span>
+                    </th>
+                    <th scope="col" class="cmp-brand">
+                      <img class="cmp-logo" src="Assets/imgi_29_default.webp" alt="IndiaFilings">
+                      <span class="sr-only">Bizee</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">Company Formation</th>
+                    <td class="center"><span class="cmp-check" aria-hidden="true"></span><span class="sr-only">Included</span></td>
+                    <td class="center"><span class="cmp-check" aria-hidden="true"></span><span class="sr-only">Included</span></td>
+                    <td class="center"><span class="cmp-check" aria-hidden="true"></span><span class="sr-only">Included</span></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Articles of Incorporation</th>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">EIN Tax ID (no SSN)</th>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Registered Agent (1st Year)</th>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Business Mailing Address</th>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Digital Document Access</th>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                    <td class="center"><span class="cmp-check"></span></td>
+                  </tr>
+                </tbody>
+
+                <tfoot>
+                  <tr class="cmp-total">
+                    <th scope="row">Total</th>
+                    <td><strong>$249 + State Fee</strong></td>
+                    <td><strong>$298 + State Fee</strong></td>
+                    <td><strong>$297 + State Fee</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="cmp-cta-wrap">
+              <a href="pricing.html" class="btn primary cmp-bigcta" aria-label="Start your business with FormLLC">
+                Start Your Business
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== Social Proof (Testimonials + Growth + Logos) ==== -->
+    <section class="social-proof" id="social-proof" aria-label="Customer love & companies we serve">
+
+      <!-- Heading -->
+      <div class="proof-head">
+        <h2 class="proof-title">
+          Hear From Our Clients
+          <span class="proof-spark" aria-hidden="true"></span>
+        </h2>
+      </div>
+
+      <!-- ==== Motion Testimonials (FULL-WIDTH) ==== -->
+      <div class="testimonials testimonials--full" aria-labelledby="testimonials-title">
+        <h3 id="testimonials-title" class="sr-only">What our customers say</h3>
+
+        <!-- Row 1: left → right -->
+        <div class="row-container dir-ltr speed-fast" aria-hidden="true">
+          <div class="row-track">
+
+            <!-- ======= SET A (7 cards) ======= -->
+            <!-- 1 -->
+            <article class="gcard">
+              <div class="g-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="Google logo">
+              </div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Shambo Ray" src="https://lh3.googleusercontent.com/a-/ALV-UjVNwcX9HZHj-eBt4FnUsQfcwQYVEdiN7sWit0gIv9FoBGaFbLYCZQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Shambo Ray</h6>
+              </header>
+              <p class="g-text">Good work, proficient and done on time. Leegal is fast, responsive, reliable and cost-effective. Great work team.</p>
+              <p class="g-company">— Bindt AI LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Varun Krishna" src="https://user-images.trustpilot.com/683e719ff0e9f30bf0609e3c/73x73.png"></div>
+                <h6 class="g-name">Varun Krishna</h6>
+              </header>
+              <p class="g-text">Leegal made setting up a US LLC a breeze—efficient, professional and friendly support throughout.</p>
+              <p class="g-company">— The AIGency LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Stanley Chiluka" src="https://lh3.googleusercontent.com/a-/ALV-UjV-8CrNk9MwP1IeilwaiI2LBUHW08_SRX2wOlQ4PKGm-twTY2Kr=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Stanley Chiluka</h6>
+              </header>
+              <p class="g-text">Professional, responsive and quality-driven. Clear communication and on-time delivery.</p>
+              <p class="g-company">— Skilled Crew Solutions LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Talabathula Manoj" src="https://lh3.googleusercontent.com/a/ACg8ocI91ulQsmWdT9ulfHtohe7PZS7thbcVzxxvRtrjWvccy9Kul6QB=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Talabathula Manoj</h6>
+              </header>
+              <p class="g-text">US LLC with ITIN, PayPal and Stripe—quick and easy. Regular updates and prompt answers.</p>
+              <p class="g-company">— Your Wellness Products LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Bankim Dalal" src="https://lh3.googleusercontent.com/a/ACg8ocJ_vF1ul8K7bEhL4xAiH_J68IhADeJUOb2ibB00dKs5xnZf5g=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Bankim Dalal</h6>
+              </header>
+              <p class="g-text">Amazing experience! Responsive team handled LLC, EIN, bank setup and Stripe smoothly.</p>
+              <p class="g-company">— Extraction de Minraux LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Sai Tarun" src="https://lh3.googleusercontent.com/a-/ALV-UjWmUn99qgY6qWfnjJkwlRkmTUZP89xEpQeLrVbt0n71Yrb4G_Un=s72-c-rp-mo-ba2-br100"></div>
+                <h6 class="g-name">Sai Tarun</h6>
+              </header>
+              <p class="g-text">Had a great experience forming my LLC in the US.</p>
+              <p class="g-company">— STRINT Technologies LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="GRN WORD PAYMENTS" src="https://lh3.googleusercontent.com/a/ACg8ocLHCe-HqR2dRZ1FGzfVNq5xnqitACU1q0yyQWzDXBpmt4x1_w=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">GRN WORD PAYMENTS</h6>
+              </header>
+              <p class="g-text">They helped me register my company very fast—within 2 weeks.</p>
+              <p class="g-company">— FiveM Assets LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- ======= DUPLICATE SET (for seamless marquee) ======= -->
+            <!-- 1 -->
+            <article class="gcard">
+              <div class="g-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="Google logo">
+              </div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Shambo Ray" src="https://lh3.googleusercontent.com/a-/ALV-UjVNwcX9HZHj-eBt4FnUsQfcwQYVEdiN7sWit0gIv9FoBGaFbLYCZQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Shambo Ray</h6>
+              </header>
+              <p class="g-text">Good work, proficient and done on time. Leegal is fast, responsive, reliable and cost-effective. Great work team.</p>
+              <p class="g-company">— Bindt AI LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Varun Krishna" src="https://user-images.trustpilot.com/683e719ff0e9f30bf0609e3c/73x73.png"></div>
+                <h6 class="g-name">Varun Krishna</h6>
+              </header>
+              <p class="g-text">Leegal made setting up a US LLC a breeze—efficient, professional and friendly support throughout.</p>
+              <p class="g-company">— The AIGency LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Stanley Chiluka" src="https://lh3.googleusercontent.com/a-/ALV-UjV-8CrNk9MwP1IeilwaiI2LBUHW08_SRX2wOlQ4PKGm-twTY2Kr=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Stanley Chiluka</h6>
+              </header>
+              <p class="g-text">Professional, responsive and quality-driven. Clear communication and on-time delivery.</p>
+              <p class="g-company">— Skilled Crew Solutions LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Talabathula Manoj" src="https://lh3.googleusercontent.com/a/ACg8ocI91ulQsmWdT9ulfHtohe7PZS7thbcVzxxvRtrjWvccy9Kul6QB=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Talabathula Manoj</h6>
+              </header>
+              <p class="g-text">US LLC with ITIN, PayPal and Stripe—quick and easy. Regular updates and prompt answers.</p>
+              <p class="g-company">— Your Wellness Products LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Bankim Dalal" src="https://lh3.googleusercontent.com/a/ACg8ocJ_vF1ul8K7bEhL4xAiH_J68IhADeJUOb2ibB00dKs5xnZf5g=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Bankim Dalal</h6>
+              </header>
+              <p class="g-text">Amazing experience! Responsive team handled LLC, EIN, bank setup and Stripe smoothly.</p>
+              <p class="g-company">— Extraction de Minraux LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Sai Tarun" src="https://lh3.googleusercontent.com/a-/ALV-UjWmUn99qgY6qWfnjJkwlRkmTUZP89xEpQeLrVbt0n71Yrb4G_Un=s72-c-rp-mo-ba2-br100"></div>
+                <h6 class="g-name">Sai Tarun</h6>
+              </header>
+              <p class="g-text">Had a great experience forming my LLC in the US.</p>
+              <p class="g-company">— STRINT Technologies LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="GRN WORD PAYMENTS" src="https://lh3.googleusercontent.com/a/ACg8ocLHCe-HqR2dRZ1FGzfVNq5xnqitACU1q0yyQWzDXBpmt4x1_w=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">GRN WORD PAYMENTS</h6>
+              </header>
+              <p class="g-text">They helped me register my company very fast—within 2 weeks.</p>
+              <p class="g-company">— FiveM Assets LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Row 2: right → left -->
+        <div class="row-container dir-rtl speed-fast">
+          <div class="row-track">
+
+            <!-- ======= SET B (7 cards) ======= -->
+            <!-- 1 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Sunil Rajput" src="https://lh3.googleusercontent.com/a-/ALV-UjXiKwvq_kr4NKTuQyp7N6M0Nczz6Wvt22OtKt4q_uR7RM-ZHrm4=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Sunil Rajput</h6>
+              </header>
+              <p class="g-text">Very good experience—helped a lot to register my business in the USA and finished within 10 days.</p>
+              <p class="g-company">— Travelluex LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Mohit Tomar" src="https://lh3.googleusercontent.com/a/ACg8ocKa3KWqWDVaIoxN1Z_LM-ZW4WrQVu-QcCQgP89MSgC_AT9CGQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Mohit Tomar</h6>
+              </header>
+              <p class="g-text">Awesome experience—Anas helped with LLC setup, bank account and EIN. Saves time, effort and cost.</p>
+              <p class="g-company">— Farebees LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Anit Kagra" src="https://lh3.googleusercontent.com/a/ACg8ocKUenmOOci7qcN7IU-RtwsqVV5-Q-r-poDVmRZfThBhASaj7A=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Anit Kagra</h6>
+              </header>
+              <p class="g-text">I really liked your work and you have a very nice nature.</p>
+              <p class="g-company">— APR Prime Bilz LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Bankim Dalal" src="https://lh3.googleusercontent.com/a/ACg8ocJ_vF1ul8K7bEhL4xAiH_J68IhADeJUOb2ibB00dKs5xnZf5g=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Bankim Dalal</h6>
+              </header>
+              <p class="g-text">Responsive team—LLC, EIN, bank setup and Stripe handled smoothly.</p>
+              <p class="g-company">— Extraction de Minraux LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Shambo Ray" src="https://lh3.googleusercontent.com/a-/ALV-UjVNwcX9HZHj-eBt4FnUsQfcwQYVEdiN7sWit0gIv9FoBGaFbLYCZQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Shambo Ray</h6>
+              </header>
+              <p class="g-text">Fast, responsive and reliable—best LLC agency I’ve worked with.</p>
+              <p class="g-company">— Bindt AI LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Stanley Chiluka" src="https://lh3.googleusercontent.com/a-/ALV-UjV-8CrNk9MwP1IeilwaiI2LBUHW08_SRX2wOlQ4PKGm-twTY2Kr=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Stanley Chiluka</h6>
+              </header>
+              <p class="g-text">Smooth process from start to finish; clear communication and on-time delivery.</p>
+              <p class="g-company">— Skilled Crew Solutions LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Talabathula Manoj" src="https://lh3.googleusercontent.com/a/ACg8ocI91ulQsmWdT9ulfHtohe7PZS7thbcVzxxvRtrjWvccy9Kul6QB=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Talabathula Manoj</h6>
+              </header>
+              <p class="g-text">Quick, easy formation with excellent support and updates throughout.</p>
+              <p class="g-company">— Your Wellness Products LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- ======= DUPLICATE SET (for seamless marquee) ======= -->
+            <!-- 1 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Sunil Rajput" src="https://lh3.googleusercontent.com/a-/ALV-UjXiKwvq_kr4NKTuQyp7N6M0Nczz6Wvt22OtKt4q_uR7RM-ZHrm4=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Sunil Rajput</h6>
+              </header>
+              <p class="g-text">Very good experience—helped a lot to register my business in the USA and finished within 10 days.</p>
+              <p class="g-company">— Travelluex LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Mohit Tomar" src="https://lh3.googleusercontent.com/a/ACg8ocKa3KWqWDVaIoxN1Z_LM-ZW4WrQVu-QcCQgP89MSgC_AT9CGQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Mohit Tomar</h6>
+              </header>
+              <p class="g-text">Awesome experience—Anas helped with LLC setup, bank account and EIN. Saves time, effort and cost.</p>
+              <p class="g-company">— Farebees LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Anit Kagra" src="https://lh3.googleusercontent.com/a/ACg8ocKUenmOOci7qcN7IU-RtwsqVV5-Q-r-poDVmRZfThBhASaj7A=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Anit Kagra</h6>
+              </header>
+              <p class="g-text">I really liked your work and you have a very nice nature.</p>
+              <p class="g-company">— APR Prime Bilz LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Bankim Dalal" src="https://lh3.googleusercontent.com/a/ACg8ocJ_vF1ul8K7bEhL4xAiH_J68IhADeJUOb2ibB00dKs5xnZf5g=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Bankim Dalal</h6>
+              </header>
+              <p class="g-text">Responsive team—LLC, EIN, bank setup and Stripe handled smoothly.</p>
+              <p class="g-company">— Extraction de Minraux LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Shambo Ray" src="https://lh3.googleusercontent.com/a-/ALV-UjVNwcX9HZHj-eBt4FnUsQfcwQYVEdiN7sWit0gIv9FoBGaFbLYCZQ=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Shambo Ray</h6>
+              </header>
+              <p class="g-text">Fast, responsive and reliable—best LLC agency I’ve worked with.</p>
+              <p class="g-company">— Bindt AI LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Stanley Chiluka" src="https://lh3.googleusercontent.com/a-/ALV-UjV-8CrNk9MwP1IeilwaiI2LBUHW08_SRX2wOlQ4PKGm-twTY2Kr=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Stanley Chiluka</h6>
+              </header>
+              <p class="g-text">Smooth process from start to finish; clear communication and on-time delivery.</p>
+              <p class="g-company">— Skilled Crew Solutions LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="gcard">
+              <div class="g-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt=""></div>
+              <header class="g-head">
+                <div class="g-avatar"><img alt="Talabathula Manoj" src="https://lh3.googleusercontent.com/a/ACg8ocI91ulQsmWdT9ulfHtohe7PZS7thbcVzxxvRtrjWvccy9Kul6QB=s72-c-rp-mo-br100"></div>
+                <h6 class="g-name">Talabathula Manoj</h6>
+              </header>
+              <p class="g-text">Quick, easy formation with excellent support and updates throughout.</p>
+              <p class="g-company">— Your Wellness Products LLC</p>
+              <div class="g-stars" aria-label="5 out of 5">
+                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg><svg viewBox="0 0 24 24" class="star"><path d="M12 17.3l-6.18 3.25 1.18-6.88L2 8.98l6.91-1L12 1.8 15.09 8l6.91 1-5 4.69 1.18 6.88z"/></svg>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ==== Companies / Logo Rails (3 rows, alternating directions) ==== -->
+      <div class="logo-rails logo-rails--full" aria-label="Companies that trust FormLLC" id="logo-rails">
+        <!-- Row 1: RTL -->
+        <div class="logo-rails__row" data-direction="rtl" data-speed="90">
+          <ul class="logo-rails__track">
+            <li><img src="Assets/c1.png"  alt="FutureJobHub" class="logo" /></li>
+            <li><img src="Assets/c2.png"  alt="Cognisol" class="logo" /></li>
+            <li><img src="Assets/c3.jpg"  alt="Emomatrix" class="logo" /></li>
+            <li><img src="Assets/c4.png"  alt="KIVAWEE" class="logo" /></li>
+            <li><img src="Assets/c5.png"  alt="KK Digital" class="logo" /></li>
+            <li><img src="Assets/c6.webp" alt="PMHS Tech" class="logo" /></li>
+            <li><img src="Assets/c7.png"  alt="Solvagence" class="logo" /></li>
+            <li><img src="Assets/c8.png"  alt="Zentartika" class="logo" /></li>
+            <li><img src="Assets/c9.png"  alt="WebDev" class="logo" /></li>
+            <li><img src="Assets/c10.png" alt="DMU" class="logo" /></li>
+            <li><img src="Assets/c11.png" alt="Aspar Way" class="logo" /></li>
+            <li><img src="Assets/c12.png" alt="Dataverve" class="logo" /></li>
+            <li><img src="Assets/c13.png" alt="WCF" class="logo" /></li>
+            <li><img src="Assets/c14.png" alt="AGENTYNE" class="logo" /></li>
+            <li><img src="Assets/c15.jpg" alt="HighLevel Crafters" class="logo" /></li>
+            <li><img src="Assets/c16.png" alt="CoreTech" class="logo" /></li>
+            <li><img src="Assets/c17.png" alt="TGM" class="logo" /></li>
+            <li><img src="Assets/c18.png" alt="Ranking Rush" class="logo" /></li>
+            <li><img src="Assets/c19.png" alt="ADC" class="logo" /></li>
+            <li><img src="Assets/c20.png" alt="STRINT" class="logo" /></li>
+          </ul>
+        </div>
+
+        <!-- Row 2: LTR -->
+        <div class="logo-rails__row" data-direction="ltr" data-speed="100">
+          <ul class="logo-rails__track">
+            <li><img src="Assets/c24.png" alt="FutureJobHub" class="logo" /></li>
+            <li><img src="Assets/c23.png" alt="Cognisol" class="logo" /></li>
+            <li><img src="Assets/c22.png" alt="Emomatrix" class="logo" /></li>
+            <li><img src="Assets/c21.png" alt="KIVAWEE" class="logo" /></li>
+            <li><img src="Assets/c20.png" alt="KK Digital" class="logo" /></li>
+            <li><img src="Assets/c19.png" alt="PMHS Tech" class="logo" /></li>
+            <li><img src="Assets/c18.png" alt="Solvagence" class="logo" /></li>
+            <li><img src="Assets/c17.png" alt="Zentartika" class="logo" /></li>
+            <li><img src="Assets/c16.png" alt="WebDev" class="logo" /></li>
+            <li><img src="Assets/c15.jpg" alt="DMU" class="logo" /></li> <!-- jpg -->
+            <li><img src="Assets/c14.png" alt="Aspar Way" class="logo" /></li>
+            <li><img src="Assets/c13.png" alt="Dataverve" class="logo" /></li>
+            <li><img src="Assets/c12.png" alt="WCF" class="logo" /></li>
+            <li><img src="Assets/c11.png" alt="AGENTYNE" class="logo" /></li>
+            <li><img src="Assets/c10.png" alt="HighLevel Crafters" class="logo" /></li>
+            <li><img src="Assets/c9.png"  alt="CoreTech" class="logo" /></li>
+            <li><img src="Assets/c8.png"  alt="TGM" class="logo" /></li>
+            <li><img src="Assets/c7.png"  alt="Ranking Rush" class="logo" /></li>
+            <li><img src="Assets/c6.webp" alt="ADC" class="logo" /></li> <!-- webp -->
+            <li><img src="Assets/c5.png"  alt="STRINT" class="logo" /></li>
+          </ul>
+        </div>
+
+        <!-- Row 3: RTL -->
+        <div class="logo-rails__row" data-direction="rtl" data-speed="90">
+          <ul class="logo-rails__track">
+            <li><img src="Assets/c6.webp" alt="PMHS Tech" class="logo" /></li>
+            <li><img src="Assets/c19.png" alt="ADC" class="logo" /></li>
+            <li><img src="Assets/c3.jpg"  alt="Emomatrix" class="logo" /></li>
+            <li><img src="Assets/c17.png" alt="TGM" class="logo" /></li>
+            <li><img src="Assets/c9.png"  alt="WebDev" class="logo" /></li>
+            <li><img src="Assets/c20.png" alt="STRINT" class="logo" /></li>
+            <li><img src="Assets/c1.png"  alt="FutureJobHub" class="logo" /></li>
+            <li><img src="Assets/c12.png" alt="Dataverve" class="logo" /></li>
+            <li><img src="Assets/c2.png"  alt="Cognisol" class="logo" /></li>
+            <li><img src="Assets/c13.png" alt="WCF" class="logo" /></li>
+            <li><img src="Assets/c10.png" alt="DMU" class="logo" /></li>
+            <li><img src="Assets/c7.png"  alt="Solvagence" class="logo" /></li>
+            <li><img src="Assets/c14.png" alt="AGENTYNE" class="logo" /></li>
+            <li><img src="Assets/c5.png"  alt="KK Digital" class="logo" /></li>
+            <li><img src="Assets/c4.png"  alt="KIVAWEE" class="logo" /></li>
+            <li><img src="Assets/c16.png" alt="CoreTech" class="logo" /></li>
+            <li><img src="Assets/c15.jpg" alt="HighLevel Crafters" class="logo" /></li>
+            <li><img src="Assets/c11.png" alt="Aspar Way" class="logo" /></li>
+            <li><img src="Assets/c18.png" alt="Ranking Rush" class="logo" /></li>
+            <li><img src="Assets/c8.png"  alt="Zentartika" class="logo" /></li>
+          </ul>
+        </div>
+      </div>
+
+  <!-- ==== One-Stop Solution (UPDATED for FormLLC) ==== -->
+    <section class="solutions" id="solutions">
+      <div class="container">
+        <!-- top bar: big title (left) + short copy (right) -->
+        <div class="solutions-head">
+          <h2 class="solutions-title">
+            Your One–Stop<br>Business Solution
+            <!-- red scribble accent -->
+            <svg class="solutions-scribble" viewBox="0 0 360 22" aria-hidden="true">
+              <path d="M3 19c60-10 120-10 180-14 60-4 120-4 174-3" fill="none" stroke="#be123c" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+              <path d="M10 21c60-8 120-8 180-12 60-4 120-4 167-2" fill="none" stroke="#be123c" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+            </svg>
+          </h2>
+
+          <p class="solutions-sub">
+            Everything your U.S. business needs — from setup to scale — under one roof.
+            We help non-U.S. founders save time, stay compliant, and grow faster.
+          </p>
+        </div>
+
+        <!-- cards -->
+        <ul class="solutions-grid">
+          <!-- 1 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$50 / Year</span>
+            </div>
+            <h3 class="sol-name">Premium U.S. Business Address</h3>
+            <p class="sol-desc">
+              Get a real U.S. street address with your own suite number — ideal for Amazon, Stripe,
+              and verification. Includes free mail scanning and optional forwarding worldwide.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 2 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$250 One Time</span>
+            </div>
+            <h3 class="sol-name">ITIN Application</h3>
+            <p class="sol-desc">
+              Required for non-U.S. founders to open Stripe/PayPal, build credit, or pay taxes.
+              We handle the IRS paperwork and deliver your ITIN in ~8 weeks.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 3 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$100 + State Fee</span>
+            </div>
+            <h3 class="sol-name">Annual Report Filing</h3>
+            <p class="sol-desc">
+              Avoid penalties and keep your LLC in good standing.
+              We track state deadlines, prepare filings, and submit them on time for you.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 4 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$100 One Time</span>
+            </div>
+            <h3 class="sol-name">Seller Permit / Resale Certificate</h3>
+            <p class="sol-desc">
+              Buy goods tax-free for resale and stay compliant with U.S. sales tax rules.
+              Essential for Amazon, Shopify, and wholesale e-commerce sellers.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 5 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$250 One Time</span>
+            </div>
+            <h3 class="sol-name">Business Website Setup</h3>
+            <p class="sol-desc">
+              Get a modern, mobile-friendly business site with your brand, services, and policies.
+              Includes SSL, email setup, and launch support.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 6 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$100 + State Fee</span>
+            </div>
+            <h3 class="sol-name">Company Dissolution</h3>
+            <p class="sol-desc">
+              Closing your company? We handle the paperwork, state filings, and tax clearances
+              to dissolve your LLC cleanly and avoid future liabilities.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 7 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$100 + State Fee</span>
+            </div>
+            <h3 class="sol-name">Company Amendment</h3>
+            <p class="sol-desc">
+              Need to change your company name, members, or structure?
+              We prepare and file official amendments with the state on your behalf.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 8: NEW -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$50 One Time</span>
+            </div>
+            <h3 class="sol-name">BOI Filing (FinCEN)</h3>
+            <p class="sol-desc">
+              Mandatory “Beneficial Ownership Information” report for U.S. companies.
+              We prepare and file your BOI accurately and on time to avoid penalties.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 9: NEW -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$150 / Year</span>
+            </div>
+            <h3 class="sol-name">IRS Form 5472 + pro forma 1120</h3>
+            <p class="sol-desc">
+              Required annually for foreign-owned single-member LLCs.
+              We complete the 5472, prepare the pro forma 1120, and file with the IRS.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 10: NEW -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$50 / Year</span>
+            </div>
+            <h3 class="sol-name">Registered Agent Renewal</h3>
+            <p class="sol-desc">
+              Renew your RA service to keep a U.S. point of contact for state/legal notices.
+              We ensure uninterrupted compliance and timely document forwarding.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+
+          <!-- 11 -->
+          <li class="sol-card">
+            <div class="sol-top">
+              <span class="sol-icon" aria-hidden="true"></span>
+              <span class="sol-price">$150 / Year</span>
+            </div>
+            <h3 class="sol-name">U.S. Dedicated IP VPS</h3>
+            <p class="sol-desc">
+              Boost your account trust score and avoid geo-restrictions.
+              Ideal for managing U.S. banking, Stripe, Amazon, and other platforms securely.
+            </p>
+            <a href="contact.html" class="sol-cta">Apply Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  <!-- ==== Gradient CTA Band ==== -->
+    <section class="cta-band" aria-labelledby="cta-band-title">
+      <div class="container cta-band__grid">
+        <!-- Left: logo + headline -->
+        <div class="cta-band__left">
+          <!-- double-chevron mark -->
+          <svg class="cta-logo" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+            <path fill="#ffffff" d="M8 12l24 12-24 12zM32 12l24 12-24 12z"/>
+          </svg>
+
+          <h2 id="cta-band-title" class="cta-title">
+            Start, Run and Grow your <span class="oval">Business</span><br />
+            in United States
+          </h2>
+        </div>
+
+        <!-- Right: copy + button -->
+        <div class="cta-band__right">
+          <p class="cta-copy">
+            Get your U.S. company today. With our expert support at every step, we make it
+            easy to get your company online and running smoothly.
+          </p>
+
+          <div class="cta-actions">
+            <a href="contact.html" class="cta-btn">
+              Start Your Business
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ==== FAQ / Frequently Asked Questions ==== -->
+<section class="faq" id="faq">
+  <div class="container faq-wrap">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <p class="faq-sub">
+      Got a question? Chances are, it’s been asked before! Explore our
+      collection of frequently asked questions.
+    </p>
+
+    <!-- Tabs -->
+    <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
+      <button class="faq-tab is-active" role="tab" aria-selected="true"
+        aria-controls="faq-panel-basics" id="faq-tab-basics" data-cat="basics">Basics</button>
+      <button class="faq-tab" role="tab" aria-selected="false"
+        aria-controls="faq-panel-pricing" id="faq-tab-pricing" data-cat="pricing">Pricing, Fees &amp; Refunds</button>
+      <button class="faq-tab" role="tab" aria-selected="false"
+        aria-controls="faq-panel-agent" id="faq-tab-agent" data-cat="agent">Registered Agent</button>
+      <button class="faq-tab" role="tab" aria-selected="false"
+        aria-controls="faq-panel-banking" id="faq-tab-banking" data-cat="banking">Banking</button>
+    </div>
+
+    <!-- Panels (one list, filtered by category) -->
+    <div class="faq-panel is-active" id="faq-panel-basics" role="tabpanel" aria-labelledby="faq-tab-basics">
+      <ul class="faq-accordion" role="list">
+        <!-- Item -->
+        <li class="faq-item" data-cat="basics">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+            <span>Do I need to be a U.S. citizen to work with FormLLC?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+            <p>No. FormLLC is built for founders worldwide. You can form a U.S. company as a non-resident, and we’ll guide you through EIN, BOI filing, and banking options that don’t require a SSN.</p>
+          </div>
+        </li>
+
+        <li class="faq-item" data-cat="basics">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+            <span>What information do you need from me to get started?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+            <p>Company name ideas, owner/manager details, business address preferences, and a brief description of your business activity. We’ll send a short checklist after you sign up.</p>
+          </div>
+        </li>
+
+        <li class="faq-item" data-cat="basics">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+            <span>How long will it take to file my company?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+            <p>Formation filing typically completes in a few business days (varies by state). EIN issuance usually follows within 1–2 weeks for non-SSN applicants.</p>
+          </div>
+        </li>
+
+        <li class="faq-item" data-cat="basics agent">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+            <span>What is a Registered Agent?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+            <p>A Registered Agent receives official state mail and legal notices on behalf of your company. We include the first year in our packages.</p>
+          </div>
+        </li>
+
+        <li class="faq-item" data-cat="basics banking">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+            <span>What are the differences between EIN and ITIN?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+            <p>An EIN identifies your business for tax and banking. An ITIN identifies an individual without a SSN for U.S. tax purposes. Most non-resident founders only need an EIN for their LLC.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Pricing, Fees & Refunds -->
+    <div class="faq-panel" id="faq-panel-pricing" role="tabpanel" aria-labelledby="faq-tab-pricing">
+      <ul class="faq-accordion" role="list">
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p1" id="faq-q-p1">
+            <span>What’s included in the package price?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p1" role="region" aria-labelledby="faq-q-p1">
+            <p>Your package covers U.S. LLC formation (state filing), first-year Registered Agent service, EIN application (no SSN required), BOI/FinCEN filing, operating agreement, digital documents, and access to your dashboard. State fees are separate and vary by state.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p2" id="faq-q-p2">
+            <span>What additional fees should I expect?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p2" role="region" aria-labelledby="faq-q-p2">
+            <p>State filing fees (different for Wyoming, Delaware, New Mexico, Florida, Texas, etc.), optional mailing/courier charges (if physical delivery requested), and any state-specific publication/expedite fees. We show the exact state fee before checkout.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p3" id="faq-q-p3">
+            <span>How do renewals work after the first year?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p3" role="region" aria-labelledby="faq-q-p3">
+            <p>Registered Agent renews annually. Your state may also require an annual report or franchise tax. We send reminders ahead of all deadlines and you can file from your dashboard (filing fees apply per state rules).</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p4" id="faq-q-p4">
+            <span>What’s your refund policy?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p4" role="region" aria-labelledby="faq-q-p4">
+            <p>If we haven’t submitted your order to a state or agency yet, we can cancel and refund our service fee. Government fees and third-party charges are non-refundable once paid. If something’s off with your filing, we’ll fix it promptly.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p5" id="faq-q-p5">
+            <span>Do you charge extra for EIN without SSN?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p5" role="region" aria-labelledby="faq-q-p5">
+            <p>No surprise “success” fees. EIN filing for non-SSN founders is included in our package. Processing time depends on the IRS workload.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-p6" id="faq-q-p6">
+            <span>Which payment methods do you accept?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-p6" role="region" aria-labelledby="faq-q-p6">
+            <p>Major debit/credit cards are supported. For larger orders we can arrange bank transfer. Your invoice and receipts are available in the dashboard.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Registered Agent -->
+    <div class="faq-panel" id="faq-panel-agent" role="tabpanel" aria-labelledby="faq-tab-agent">
+      <ul class="faq-accordion" role="list">
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-ra1" id="faq-q-ra1">
+            <span>What does a Registered Agent do?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-ra1" role="region" aria-labelledby="faq-q-ra1">
+            <p>Your Registered Agent receives official state mail and legal notices (service of process) on behalf of your company and keeps a reliable U.S. address on record. We scan &amp; notify you the same day for anything received.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-ra2" id="faq-q-ra2">
+            <span>Which states do you support for Registered Agent?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-ra2" role="region" aria-labelledby="faq-q-ra2">
+            <p>We cover popular formation states for non-residents — Wyoming, Delaware, New Mexico, Florida, and Texas — with same-day document scanning and alerts. Ask us if you need another state.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-ra3" id="faq-q-ra3">
+            <span>What happens after the first year of Registered Agent?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-ra3" role="region" aria-labelledby="faq-q-ra3">
+            <p>We’ll remind you to renew before expiry so there’s no lapse in coverage. You can manage renewal directly from your dashboard.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-ra4" id="faq-q-ra4">
+            <span>Can I change my Registered Agent to FormLLC later?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-ra4" role="region" aria-labelledby="faq-q-ra4">
+            <p>Yes. We’ll help you switch from your current agent to us. States usually require a simple filing and small state fee; we handle the paperwork.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-ra5" id="faq-q-ra5">
+            <span>Do you forward all mail received at the agent address?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-ra5" role="region" aria-labelledby="faq-q-ra5">
+            <p>Registered Agent service covers legal/state mail. We scan, upload, and notify. If you need a general business mailing address, add our business address service at checkout.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Banking -->
+    <div class="faq-panel" id="faq-panel-banking" role="tabpanel" aria-labelledby="faq-tab-banking">
+      <ul class="faq-accordion" role="list">
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-b1" id="faq-q-b1">
+            <span>Can non-residents open a U.S. business bank account remotely?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-b1" role="region" aria-labelledby="faq-q-b1">
+            <p>Yes — we introduce you to trusted fintech banks that accept non-resident founders (subject to bank approval). You’ll typically need your EIN, formation docs, passport, and basic KYC info. Decisions are always at the bank’s discretion.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-b2" id="faq-q-b2">
+            <span>Do I need a SSN or ITIN for banking or payment processors?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-b2" role="region" aria-labelledby="faq-q-b2">
+            <p>Most partner banks can onboard with an EIN and passport (no SSN). Some processors (e.g., PayPal/Stripe) may ask for extra KYC or ITIN later depending on your country and risk profile.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-b3" id="faq-q-b3">
+            <span>How long does banking approval take?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-b3" role="region" aria-labelledby="faq-q-b3">
+            <p>Typically a few business days after your EIN is issued, provided your KYC is complete and your business model is within the bank’s policy.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-b4" id="faq-q-b4">
+            <span>Can I use Stripe, Payoneer, or PayPal with my LLC?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-b4" role="region" aria-labelledby="faq-q-b4">
+            <p>Yes, many founders use those providers once they have an EIN, U.S. business account, and a compliant website. Onboarding is controlled by each provider’s KYC/AML policies.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-a-b5" id="faq-q-b5">
+            <span>Do banks provide physical or virtual debit cards?</span>
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-b5" role="region" aria-labelledby="faq-q-b5">
+            <p>Most partners issue virtual cards instantly and offer physical cards shipped internationally where supported. Availability varies by provider and country.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- === Contact block (image + form on white) === -->
+<section class="faq-formblock" id="faq-contact" aria-labelledby="faq-contact-title">
+  <div class="container">
+    <div class="faq-formgrid">
+      <div class="faq-form-image">
+        <img src="abcd.png" alt="Get started with FormLLC">
+      </div>
+
+      <div class="faq-formcard">
+        <h3 class="faq-form-title" id="faq-contact-title">Still have questions? Get started here.</h3>
+        <p class="faq-form-sub">Share a few details and we’ll reply within 24 hours.</p>
+
+        <form id="faqQuoteForm" class="faq-form" novalidate>
+          <input type="text" name="company" tabindex="-1" autocomplete="off"
+                 style="position:absolute;left:-9999px" aria-hidden="true">
+
+          <div class="row">
+            <label>Full name
+              <input type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label>WhatsApp (optional)
+              <input type="tel" name="whatsapp" placeholder="+1 555 000 0000">
+            </label>
+            <label>Country
+              <input type="text" name="country" placeholder="Your country">
+            </label>
+          </div>
+
+          <div class="row">
+            <label>Entity type
+              <select name="entity" required>
+                <option value="" hidden>Select entity</option>
+                <option>LLC</option><option>C-Corp</option>
+                <option>S-Corp</option><option>Non-profit</option>
+              </select>
+            </label>
+            <label>State
+              <select name="state" required>
+                <option value="" hidden>Select state</option>
+                <option>Wyoming</option><option>Delaware</option>
+                <option>New Mexico</option><option>Florida</option>
+                <option>Texas</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Message (optional)
+            <textarea name="message" rows="3" placeholder="How can we help?"></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Submit</button>
+          <div id="faqFormSuccess" class="faq-form-success" role="status" aria-live="polite" hidden>
+            ✅ Thanks! We’ll contact you shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+  <footer class="flc-footer" id="footer">
+  <div class="flc-footer__container">
+    <!-- Top row -->
+    <div class="flc-footer__main">
+      <div class="flc-footer__left">
+        <a href="/" class="flc-brand" aria-label="FormLLC">
+          <span class="flc-brand__strong">Form</span><span class="flc-brand__accent">LLC</span>
+        </a>
+        <p class="flc-desc">
+          One-stop platform for Non-U.S. founders: LLC/C-Corp formation, EIN,
+          BOI filing, Registered Agent, and banking introductions — with zero hidden fees.
+        </p>
+      </div>
+
+      <div class="flc-footer__right">
+        <div class="flc-news">
+          <h3 class="flc-news__title">Join our monthly newsletter</h3>
+          <form id="footerNewsletter" class="flc-news__form" novalidate>
+            <label class="flc-sr-only" for="nlEmail">Email</label>
+            <input id="nlEmail" class="flc-input" type="email" placeholder="Enter your email" required>
+            <button class="flc-btn" type="submit">Subscribe</button>
+          </form>
+          <p class="flc-news__pp">
+            By subscribing you agree with our
+            <a href="/privacy" class="flc-link"><strong>Privacy Policy</strong></a>
+          </p>
+          <div id="nlSuccess" class="flc-news__success" hidden>Thanks! You’re on the list. ✅</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="flc-links">
+      <div class="flc-col">
+        <h4 class="flc-col__title">Products</h4>
+        <a href="services.html" class="flc-link">Formation</a>
+        <a href="services.html" class="flc-link">Registered Agent</a>
+        <a href="services.html" class="flc-link">EIN & BOI</a>
+        <a href="services.html" class="flc-link">Banking</a>
+        <a href="pricing.html" class="flc-link">Pricing</a>
+      </div>
+      <div class="flc-col">
+        <h4 class="flc-col__title">Company</h4>
+        <a href="aboutus.html" class="flc-link">About Us</a>
+        <a href="#why" class="flc-link">Why FormLLC</a>
+        <a href="#faq" class="flc-link">Help &amp; FAQ</a>
+        <a href="/affiliates" class="flc-link">Affiliate Program</a>
+        <a href="/partners" class="flc-link">Partners</a>
+      </div>
+      <div class="flc-col">
+        <h4 class="flc-col__title">Resources</h4>
+        <a href="https://blog.formllc.us" class="flc-link">Blog</a>
+        <a href="#support" class="flc-link">Support</a>
+        <a href="/guides" class="flc-link">Guides</a>
+        <a href="/updates" class="flc-link">Product Updates</a>
+        <a href="./Payments/payments.html" class="flc-link">Payment Links</a>
+      </div>
+      <div class="flc-col">
+        <h4 class="flc-col__title">Legal</h4>
+        <a href="/terms" class="flc-link">Terms of Service</a>
+        <a href="/privacy" class="flc-link">Privacy Policy</a>
+        <a href="/cookies" class="flc-link">Cookie Policy</a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="flc-bottom">
+      <div class="flc-social">
+        <a class="flc-social__link" href="https://x.com" aria-label="X / Twitter" target="_blank" rel="noopener">
+          <!-- X -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M14.6 2H17L11.2 9.2 18 22h-5.1l-3.8-6-4.9 6H2.7l6.1-7.7L2 2h5.2l3.3 5 4.1-5zm-.8 18h1.4L7 4H5.6L13.8 20z"/>
+          </svg>
+        </a>
+        <a class="flc-social__link" href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <!-- LinkedIn -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 13.44V21h-4.12v-6.86c0-1.64-.6-2.76-2.08-2.76-1.13 0-1.8.76-2.08 1.5-.11.26-.13.62-.13.99V21H7.92s.05-10.61 0-11.75h4.12v1.67c.55-.86 1.53-2.1 3.72-2.1 2.56 0 4.69 1.67 4.69 5.62zM5.06 3.6c-1.37 0-2.26.9-2.26 2.08 0 1.16.86 2.08 2.2 2.08h.03c1.41 0 2.27-.92 2.27-2.08-.02-1.18-.86-2.08-2.24-2.08zM2.8 21h4.14V9.25H2.8V21z"/>
+          </svg>
+        </a>
+        <a class="flc-social__link" href="https://www.youtube.com" aria-label="YouTube" target="_blank" rel="noopener">
+          <!-- YouTube -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M23 7.9c0-1.7-1.3-3.1-3-3.3C16.6 4.2 12 4.2 12 4.2s-4.6 0-8 .4c-1.7.2-3 1.6-3 3.3v8.2c0 1.7 1.3 3.1 3 3.3 3.4.4 8 .4 8 .4s4.6 0 8-.4c1.7-.2 3-1.6 3-3.3V7.9zM10 15.5v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="flc-copy">
+        © <span id="footerYear"></span> FormLLC. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
